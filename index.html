@@ -12,10 +12,16 @@
   <!-- Favicon (Using the new luxury logo) -->
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 
+  <!-- DNS Prefetch & Preconnect for Performance -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://www.google.com">
+  <link rel="dns-prefetch" href="https://maps.google.com">
+
   <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- FontAwesome Icons CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -51,6 +57,7 @@
           <a href="#fleet" data-i18n="nav-fleet" class="text-sm font-medium hover:text-gold transition-colors duration-200">أسطولنا</a>
           <a href="#destinations" data-i18n="nav-destinations" class="text-sm font-medium hover:text-gold transition-colors duration-200">وجهاتنا</a>
           <a href="#booking" data-i18n="nav-booking" class="text-sm font-medium hover:text-gold transition-colors duration-200">احجز الآن</a>
+          <a href="#location" data-i18n="nav-location" class="text-sm font-medium hover:text-gold transition-colors duration-200">موقعنا</a>
           <a href="#contact" data-i18n="nav-contact" class="text-sm font-medium hover:text-gold transition-colors duration-200">اتصل بنا</a>
         </nav>
 
@@ -114,6 +121,7 @@
         <a href="#fleet" data-i18n="nav-fleet" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">أسطولنا</a>
         <a href="#destinations" data-i18n="nav-destinations" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">وجهاتنا</a>
         <a href="#booking" data-i18n="nav-booking" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">احجز الآن</a>
+        <a href="#location" data-i18n="nav-location" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">موقعنا</a>
         <a href="#contact" data-i18n="nav-contact" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">اتصل بنا</a>
       </nav>
     </div>
@@ -353,7 +361,7 @@
         <!-- Toyota Corolla Card -->
         <div class="reveal glass-panel rounded-2xl overflow-hidden flex flex-col justify-between">
           <div class="relative h-52 overflow-hidden">
-            <img src="assets/images/fleet_corolla.jpg" alt="Toyota Corolla" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            <img src="assets/images/fleet_corolla.jpg" alt="Toyota Corolla" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div class="absolute bottom-4 right-4 flex items-center gap-2 bg-black/60 px-3 py-1 rounded-full text-xs text-gold">
               <i class="fa-solid fa-users"></i>
@@ -376,7 +384,7 @@
         <!-- Hyundai CN7 Card -->
         <div class="reveal glass-panel rounded-2xl overflow-hidden flex flex-col justify-between">
           <div class="relative h-52 overflow-hidden">
-            <img src="assets/images/fleet_cn7.jpg" alt="Hyundai CN7" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            <img src="assets/images/fleet_cn7.jpg" alt="Hyundai CN7" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div class="absolute bottom-4 right-4 flex items-center gap-2 bg-black/60 px-3 py-1 rounded-full text-xs text-gold">
               <i class="fa-solid fa-users"></i>
@@ -399,7 +407,7 @@
         <!-- Mitsubishi Xpander Card -->
         <div class="reveal glass-panel rounded-2xl overflow-hidden flex flex-col justify-between">
           <div class="relative h-52 overflow-hidden">
-            <img src="assets/images/fleet_xpander.jpg" alt="Mitsubishi Xpander" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            <img src="assets/images/fleet_xpander.jpg" alt="Mitsubishi Xpander" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             <div class="absolute bottom-4 right-4 flex items-center gap-2 bg-black/60 px-3 py-1 rounded-full text-xs text-gold">
               <i class="fa-solid fa-users"></i>
@@ -696,7 +704,86 @@
     </div>
   </section>
 
-  <!-- 11. Footer -->
+  <!-- 11. Location & Map Section -->
+  <section id="location" class="py-24 bg-[#0B0B0B] border-t border-[#1E1E1E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="reveal text-center max-w-3xl mx-auto mb-16">
+        <span data-i18n="location-badge" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold block mb-3">موقعنا على الخريطة</span>
+        <h2 data-i18n="location-title" class="text-3xl sm:text-4xl font-extrabold mb-5 leading-tight">تعرف على موقعنا وزورنا في أي وقت</h2>
+        <p data-i18n="location-subtitle" class="text-gray-400 text-sm sm:text-base leading-relaxed">
+          مقرنا في المندرة القبلية، الإسكندرية. يمكنك زيارتنا في أي وقت أو التواصل معنا لترتيب رحلتك.
+        </p>
+      </div>
+
+      <!-- Map & Info Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Map Embed (Left/Main) -->
+        <div class="reveal lg:col-span-8 rounded-3xl overflow-hidden border border-gold/15 shadow-2xl" style="min-height: 420px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.5!2d29.9089!3d31.1835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDExJzAwLjYiTiAyOcKwNTQnMzIuMCJF!5e0!3m2!1sar!2seg!4v1700000000000"
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 420px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Al Yassin Limousine Location">
+          </iframe>
+        </div>
+
+        <!-- Location Info Cards (Right) -->
+        <div class="reveal lg:col-span-4 flex flex-col gap-6">
+          
+          <!-- Address Card -->
+          <div class="glass-panel p-6 rounded-2xl flex-1">
+            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold border border-gold/20">
+              <i class="fa-solid fa-location-dot text-xl"></i>
+            </div>
+            <h3 data-i18n="location-address-title" class="text-lg font-bold mb-2">عنوان المقر</h3>
+            <p data-i18n="location-address-text" class="text-sm text-gray-400 leading-relaxed">
+              المندرة القبلية، محافظة الإسكندرية<br>
+              الرمز البريدي: 5524101
+            </p>
+            <p class="text-xs text-gold font-semibold mt-3 font-sans">Plus Code: 7266+G52</p>
+          </div>
+
+          <!-- Working Hours Card -->
+          <div class="glass-panel p-6 rounded-2xl flex-1">
+            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold border border-gold/20">
+              <i class="fa-regular fa-clock text-xl"></i>
+            </div>
+            <h3 data-i18n="location-hours-title" class="text-lg font-bold mb-2">ساعات العمل</h3>
+            <p data-i18n="location-hours-text" class="text-sm text-gray-400 leading-relaxed">
+              نعمل على مدار ٢٤ ساعة، ٧ أيام في الأسبوع. اتصل بنا في أي وقت!
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              <span data-i18n="location-status" class="text-xs text-green-400 font-semibold">متاح الآن</span>
+            </div>
+          </div>
+
+          <!-- Directions CTA Card -->
+          <a href="https://maps.google.com/?q=31.1835,29.9089" target="_blank" rel="noopener noreferrer" class="glass-panel p-6 rounded-2xl flex items-center gap-4 group hover:border-gold/40 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center text-gold border border-gold/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-diamond-turn-right text-xl"></i>
+            </div>
+            <div class="flex-1">
+              <h3 data-i18n="location-directions" class="text-lg font-bold group-hover:text-gold transition-colors">احصل على الاتجاهات</h3>
+              <p data-i18n="location-directions-sub" class="text-xs text-gray-400">افتح خرائط جوجل للوصول إلينا</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gold opacity-0 group-hover:opacity-100 transition-opacity"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Footer -->
   <footer class="bg-[#0B0B0B] border-t border-[#121212] pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -758,6 +845,6 @@
   </footer>
 
   <!-- App Javascript -->
-  <script src="js/app.js"></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

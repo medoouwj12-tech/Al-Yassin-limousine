@@ -11,6 +11,7 @@ const translations = {
     "nav-fleet": "أسطولنا",
     "nav-destinations": "وجهاتنا",
     "nav-booking": "احجز الآن",
+    "nav-location": "موقعنا",
     "nav-contact": "اتصل بنا",
     "nav-cta": "احجز رحلتك",
 
@@ -133,6 +134,18 @@ const translations = {
     "footer-contact-title": "معلومات الاتصال",
     "footer-working-hours": "ساعات العمل: ٢٤ ساعة طوال أيام الأسبوع",
     "footer-copyright": "© 2026 آل ياسين لخدمات الليموزين. جميع الحقوق محفوظة.",
+
+    // Location Section
+    "location-badge": "موقعنا على الخريطة",
+    "location-title": "تعرف على موقعنا وزورنا في أي وقت",
+    "location-subtitle": "مقرنا في المندرة القبلية، الإسكندرية. يمكنك زيارتنا في أي وقت أو التواصل معنا لترتيب رحلتك.",
+    "location-address-title": "عنوان المقر",
+    "location-address-text": "المندرة القبلية، محافظة الإسكندرية<br>الرمز البريدي: 5524101",
+    "location-hours-title": "ساعات العمل",
+    "location-hours-text": "نعمل على مدار ٢٤ ساعة، ٧ أيام في الأسبوع. اتصل بنا في أي وقت!",
+    "location-status": "متاح الآن",
+    "location-directions": "احصل على الاتجاهات",
+    "location-directions-sub": "افتح خرائط جوجل للوصول إلينا",
     
     // Toast Messages
     "toast-fill-fields": "يرجى ملء جميع الحقول المطلوبة لحساب السعر!"
@@ -146,6 +159,7 @@ const translations = {
     "nav-fleet": "Fleet",
     "nav-destinations": "Destinations",
     "nav-booking": "Book Now",
+    "nav-location": "Location",
     "nav-contact": "Contact",
     "nav-cta": "Book Ride",
 
@@ -268,6 +282,18 @@ const translations = {
     "footer-contact-title": "Contact Details",
     "footer-working-hours": "Working Hours: 24/7 service",
     "footer-copyright": "© 2026 Al Yassin Limousine. All rights reserved.",
+
+    // Location Section
+    "location-badge": "Our Location",
+    "location-title": "Find Us & Visit Anytime",
+    "location-subtitle": "Our office is located in Al Mandarah Qebli, Alexandria. Visit us anytime or contact us to arrange your trip.",
+    "location-address-title": "Office Address",
+    "location-address-text": "Al Mandarah Qebli, Alexandria Governorate<br>Postal Code: 5524101",
+    "location-hours-title": "Working Hours",
+    "location-hours-text": "We operate 24 hours, 7 days a week. Call us anytime!",
+    "location-status": "Available Now",
+    "location-directions": "Get Directions",
+    "location-directions-sub": "Open Google Maps to navigate to us",
     
     // Toast Messages
     "toast-fill-fields": "Please fill in all required fields to estimate the fare!"
@@ -412,7 +438,7 @@ function initStickyNavbar() {
       navbar.classList.remove("py-3");
       navbar.classList.add("py-5");
     }
-  });
+  }, { passive: true });
 }
 
 // 7. Mobile Navigation Drawer
