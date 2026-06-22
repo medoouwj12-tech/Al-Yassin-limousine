@@ -73,6 +73,9 @@ const translations = {
     "fleet-xpander-title": "ميتسوبيشي إكسباندر",
     "fleet-xpander-desc": "سيارة عائلية متعددة الأغراض (MPV) تتسع لـ 7 ركاب، مثالية للرحلات الطويلة والمجموعات التي تبحث عن الراحة والمساحة الكافية.",
     "fleet-xpander-cap": "٧ ركاب | ٤ حقائب",
+    "fleet-jetour-title": "جيتور X70",
+    "fleet-jetour-desc": "SUV عصري وأنيق يجمع بين التصميم الرياضي والمساحة الداخلية الواسعة، مع تجهيزات متكاملة لرحلة مريحة وآمنة.",
+    "fleet-jetour-cap": "٥ ركاب | ٤ حقائب",
     
     // Feature Badges
     "badge-price": "أقل سعر في مصر",
@@ -119,6 +122,7 @@ const translations = {
     "opt-car-corolla": "تويوتا كورولا (Toyota Corolla)",
     "opt-car-cn7": "هيونداي CN7 (Hyundai Elantra)",
     "opt-car-xpander": "ميتسوبيشي إكسباندر (Xpander)",
+    "opt-car-jetour": "جيتور X70 (Jetour X70)",
     
     "lbl-passengers": "عدد الركاب",
     "lbl-luggage": "عدد الحقائب",
@@ -221,6 +225,9 @@ const translations = {
     "fleet-xpander-title": "Mitsubishi Xpander (7-Seater)",
     "fleet-xpander-desc": "A 7-seater multi-purpose family vehicle (MPV), perfect for long road trips and groups seeking comfort and generous space.",
     "fleet-xpander-cap": "7 Passengers | 4 Bags",
+    "fleet-jetour-title": "Jetour X70 SUV",
+    "fleet-jetour-desc": "A stylish and modern SUV combining sporty design with spacious interior, fully equipped for a comfortable and safe journey.",
+    "fleet-jetour-cap": "5 Passengers | 4 Bags",
     
     // Feature Badges
     "badge-price": "Best Price in Egypt",
@@ -267,6 +274,7 @@ const translations = {
     "opt-car-corolla": "Toyota Corolla",
     "opt-car-cn7": "Hyundai CN7 (Elantra)",
     "opt-car-xpander": "Mitsubishi Xpander (7-Seater)",
+    "opt-car-jetour": "Jetour X70 SUV",
     
     "lbl-passengers": "Passengers Count",
     "lbl-luggage": "Luggage Count",
