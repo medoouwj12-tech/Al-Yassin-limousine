@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>آل ياسين لخدمات الليموزين | ليموزين المطار وتوصيل المحافظات VIP</title>
+  <meta name="description" content="آل ياسين لخدمات الليموزين - ليموزين المطار، خدمات رجال الأعمال وتوصيل المحافظات بأقل الأسعار وأعلى جودة VIP في مصر. احجز رحلتك الآن وسافر براحة تامة.">
+  <meta name="keywords" content="ليموزين, مطار القاهرة, ليموزين مطار برج العرب, ليموزين الاسكندرية, الساحل الشمالي, خدمات رجال الاعمال, حجز ليموزين مصر">
+  
+  <!-- Favicon (Using the new luxury logo) -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Compiled Tailwind CSS v4 -->
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-[#0B0B0B] text-white selection:bg-gold selection:text-black antialiased">
+
+  <!-- 1. Floating WhatsApp Button -->
+  <a href="https://wa.me/201271170882" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 wa-float-btn" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- 2. Sticky Glassmorphism Header -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 py-5 transition-all duration-300 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Al Yassin Limousine Logo" class="h-10 w-10 sm:h-12 sm:w-12 object-contain rounded-lg border border-gold/20 shadow-lg gold-logo-glow">
+          <span data-i18n="nav-logo" class="text-xl sm:text-2xl font-black tracking-wider bg-gradient-to-r from-gold-light via-gold to-gold-dark bg-clip-text text-transparent uppercase font-semibold">
+            آل ياسين ليموزين
+          </span>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+          <a href="#home" data-i18n="nav-home" class="text-sm font-medium hover:text-gold transition-colors duration-200">الرئيسية</a>
+          <a href="#about" data-i18n="nav-about" class="text-sm font-medium hover:text-gold transition-colors duration-200">من نحن</a>
+          <a href="#services" data-i18n="nav-services" class="text-sm font-medium hover:text-gold transition-colors duration-200">خدماتنا</a>
+          <a href="#fleet" data-i18n="nav-fleet" class="text-sm font-medium hover:text-gold transition-colors duration-200">أسطولنا</a>
+          <a href="#destinations" data-i18n="nav-destinations" class="text-sm font-medium hover:text-gold transition-colors duration-200">وجهاتنا</a>
+          <a href="#booking" data-i18n="nav-booking" class="text-sm font-medium hover:text-gold transition-colors duration-200">احجز الآن</a>
+          <a href="#contact" data-i18n="nav-contact" class="text-sm font-medium hover:text-gold transition-colors duration-200">اتصل بنا</a>
+        </nav>
+
+        <!-- Language Toggle & CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          
+          <!-- Language Toggler Switch -->
+          <div class="flex items-center gap-2 bg-[#141414] border border-[#2A2A2A] px-3 py-1.5 rounded-full">
+            <span class="text-xs font-bold text-gray-400">AR</span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="lang-toggle" class="sr-only peer">
+              <div class="w-10 h-5 bg-[#2A2A2A] rounded-full peer peer-focus:ring-0 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-gold after:border-none after:rounded-full after:h-4 after:w-4 after:transition-all toggle-dot"></div>
+            </label>
+            <span class="text-xs font-bold text-gray-400">EN</span>
+          </div>
+
+          <a href="#booking" data-i18n="nav-cta" class="px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all gold-outline-btn uppercase">
+            احجز رحلتك
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden gap-3">
+          
+          <!-- Language Switcher (Mobile) -->
+          <div class="flex items-center gap-1.5 bg-[#141414] border border-[#2A2A2A] px-2.5 py-1 rounded-full">
+            <span class="text-[10px] font-bold text-gray-400">AR</span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="lang-toggle-mobile" class="sr-only peer">
+              <div class="w-8 h-4 bg-[#2A2A2A] rounded-full peer peer-focus:ring-0 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-gold after:rounded-full after:h-3 after:w-3 after:transition-all toggle-dot"></div>
+            </label>
+            <span class="text-[10px] font-bold text-gray-400">EN</span>
+          </div>
+
+          <button id="mobile-menu-btn" class="text-white hover:text-gold focus:outline-none transition-colors" aria-label="Toggle mobile menu">
+            <i class="fa-solid fa-bars-staggered text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Mobile Navigation Drawer -->
+  <div id="mobile-menu-drawer" class="fixed inset-y-0 right-0 z-50 w-80 bg-[#0B0B0B]/98 backdrop-blur-2xl border-l border-gold/10 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-2xl flex flex-col justify-between py-8 px-6">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#1E1E1E]">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Al Yassin Limousine Logo" class="h-8 w-8 object-contain rounded-md border border-gold/20 shadow-md gold-logo-glow">
+          <span class="text-lg font-bold bg-gradient-to-r from-gold-light to-gold bg-clip-text text-transparent">آل ياسين ليموزين</span>
+        </div>
+        <button id="mobile-close-btn" class="text-white hover:text-gold focus:outline-none" aria-label="Close menu">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+      </div>
+      
+      <nav class="flex flex-col gap-5 mt-8">
+        <a href="#home" data-i18n="nav-home" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">الرئيسية</a>
+        <a href="#about" data-i18n="nav-about" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">من نحن</a>
+        <a href="#services" data-i18n="nav-services" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">خدماتنا</a>
+        <a href="#fleet" data-i18n="nav-fleet" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">أسطولنا</a>
+        <a href="#destinations" data-i18n="nav-destinations" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">وجهاتنا</a>
+        <a href="#booking" data-i18n="nav-booking" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">احجز الآن</a>
+        <a href="#contact" data-i18n="nav-contact" class="mobile-menu-link text-lg font-semibold hover:text-gold transition-colors">اتصل بنا</a>
+      </nav>
+    </div>
+
+    <div class="border-t border-[#1E1E1E] pt-6 flex flex-col gap-4">
+      <a href="tel:01271170882" class="flex items-center gap-3 text-sm text-gray-300 hover:text-gold">
+        <i class="fa-solid fa-phone text-gold"></i>
+        <span>01271170882</span>
+      </a>
+      <a href="tel:01556861186" class="flex items-center gap-3 text-sm text-gray-300 hover:text-gold">
+        <i class="fa-solid fa-phone text-gold"></i>
+        <span>01556861186</span>
+      </a>
+      <a href="#booking" class="w-full py-3 rounded-full text-center text-black font-bold gold-btn mt-2">
+        احجز الآن
+      </a>
+    </div>
+  </div>
+
+  <!-- 4. Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <!-- Image Background Slider -->
+    <div class="absolute inset-0 z-0">
+      <div class="hero-slide absolute inset-0 bg-cover bg-center transition-all duration-1000 opacity-100 scale-105" style="background-image: url('assets/images/hero_bg.png');"></div>
+      <!-- Add a deep linear luxury vignette overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/70 to-[#0B0B0B]/85"></div>
+      <div class="absolute inset-0 bg-black/45"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8 sm:mt-12">
+      <!-- High-End Badge -->
+      <div class="reveal inline-flex items-center gap-2 bg-[#121212]/90 border border-gold/30 px-4 py-2 rounded-full mb-6 shadow-xl">
+        <span data-i18n="hero-badge" class="text-xs sm:text-sm font-bold text-gold tracking-wider uppercase">💎 خدمات رجال الأعمال و VIP 100%</span>
+      </div>
+
+      <!-- Luxury Typography Headlines -->
+      <h1 class="reveal max-w-4xl mx-auto text-4xl sm:text-5xl md:text-6.5xl font-extrabold tracking-tight leading-tight md:leading-snug mb-6">
+        <span data-i18n="hero-title-1" class="block text-gray-300">لو بتفكر تسافر يبقى البوست ده ليك</span>
+        <span data-i18n="hero-title-2" class="block bg-gradient-to-r from-gold-light via-gold to-gold-dark bg-clip-text text-transparent font-black mt-2">احنا معاك في كل مكان</span>
+      </h1>
+
+      <p data-i18n="hero-subtitle" class="reveal max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">
+        نقدم أفضل خدمات الليموزين والنقل السياحي في مصر بأعلى معايير الرفاهية والأمان وأقل الأسعار.
+      </p>
+
+      <!-- CTAs -->
+      <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <a href="#booking" data-i18n="hero-cta-book" class="w-full sm:w-auto px-8 py-4 rounded-full text-black font-extrabold shadow-lg gold-btn text-center text-lg">
+          احجز رحلتك الآن
+        </a>
+        <a href="#fleet" data-i18n="hero-cta-fleet" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold transition-all gold-outline-btn text-center text-lg">
+          رؤية الأسطول
+        </a>
+      </div>
+
+      <!-- Key Trust Metrics -->
+      <div class="reveal grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mt-20 border-t border-[#1E1E1E] pt-10 text-center">
+        <div>
+          <p data-i18n="stat-clients-val" class="text-2xl sm:text-4xl font-extrabold text-gold tracking-tight gold-text-glow">+١٥,٠٠٠</p>
+          <p data-i18n="stat-clients-lbl" class="text-xs sm:text-sm font-semibold text-gray-400 mt-1.5">عميل سعيد</p>
+        </div>
+        <div>
+          <p data-i18n="stat-trips-val" class="text-2xl sm:text-4xl font-extrabold text-gold tracking-tight gold-text-glow">+٢٠,٠٠٠</p>
+          <p data-i18n="stat-trips-lbl" class="text-xs sm:text-sm font-semibold text-gray-400 mt-1.5">رحلة ناجحة</p>
+        </div>
+        <div>
+          <p data-i18n="stat-cars-val" class="text-2xl sm:text-4xl font-extrabold text-gold tracking-tight gold-text-glow">+٥٠</p>
+          <p data-i18n="stat-cars-lbl" class="text-xs sm:text-sm font-semibold text-gray-400 mt-1.5">سيارة حديثة</p>
+        </div>
+        <div>
+          <p data-i18n="stat-rating-val" class="text-2xl sm:text-4xl font-extrabold text-gold tracking-tight gold-text-glow">٤.٩/٥</p>
+          <p data-i18n="stat-rating-lbl" class="text-xs sm:text-sm font-semibold text-gray-400 mt-1.5">تقييم العملاء</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. About Us Section -->
+  <section id="about" class="py-24 bg-[#0B0B0B] border-t border-[#121212]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Column: Visual Grid of Cards -->
+        <div class="reveal lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-6 order-2 lg:order-1">
+          <div class="glass-panel p-6 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold border border-gold/20">
+              <i class="fa-regular fa-clock text-xl"></i>
+            </div>
+            <h3 data-i18n="about-feat-1-title" class="text-lg font-bold mb-2">التزام تام بالمواعيد</h3>
+            <p data-i18n="about-feat-1-desc" class="text-sm text-gray-400 leading-relaxed">نصل قبل موعدك لضمان عدم تأخرك على رحلتك أو اجتماعك.</p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl mt-0 sm:mt-6">
+            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold border border-gold/20">
+              <i class="fa-solid fa-user-tie text-xl"></i>
+            </div>
+            <h3 data-i18n="about-feat-2-title" class="text-lg font-bold mb-2">سائقون محترفون</h3>
+            <p data-i18n="about-feat-2-desc" class="text-sm text-gray-400 leading-relaxed">سائقونا مدربون وعلى دراية كاملة بجميع الطرق المصرية.</p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl sm:col-span-2">
+            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-4 text-gold border border-gold/20">
+              <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+            </div>
+            <h3 data-i18n="about-feat-3-title" class="text-lg font-bold mb-2">راحة ورفاهية قصوى</h3>
+            <p data-i18n="about-feat-3-desc" class="text-sm text-gray-400 leading-relaxed">سيارات فخمة مكيفة ومجهزة بالكامل لتوفير تجربة مريحة وممتازة طوال مسافات الطريق.</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Text Info -->
+        <div class="reveal lg:col-span-7 order-1 lg:order-2">
+          <span data-i18n="about-badge" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold block mb-3">نبذة عنا</span>
+          <h2 data-i18n="about-title" class="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight">آل ياسين لخدمات الليموزين الفاخرة</h2>
+          <p data-i18n="about-desc-1" class="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
+            نحن في آل ياسين ليموزين نفخر بتقديم تجربة نقل فاخرة لا تُنسى في جمهورية مصر العربية. تأسست شركتنا لتلبية احتياجات المسافرين الباحثين عن الراحة المطلقة، الخصوصية، والالتزام التام بالمواعيد.
+          </p>
+          <p data-i18n="about-desc-2" class="text-gray-400 text-sm sm:text-base leading-relaxed mb-8">
+            سواء كنت بحاجة إلى توصيل للمطار، سيارة لخدمة رجال الأعمال، أو جولات سياحية بين المحافظات، فإن أسطولنا الحديث وسائقينا المحترفين مستعدون لخدمتك على مدار الساعة طوال أيام الأسبوع.
+          </p>
+
+          <!-- Call to Action -->
+          <div class="flex items-center gap-4">
+            <div class="w-1 h-12 bg-gold"></div>
+            <div class="text-sm">
+              <p class="font-extrabold text-white" data-i18n="footer-working-hours">ساعات العمل: ٢٤ ساعة طوال أيام الأسبوع</p>
+              <p class="text-gray-400">سعداء بخدمتكم في أي وقت وفي أي مكان.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Services Section -->
+  <section id="services" class="py-24 bg-[#121212]/30 border-y border-[#1E1E1E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="reveal text-center max-w-3xl mx-auto mb-16">
+        <span data-i18n="services-badge" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold block mb-3">خدمات النخبة</span>
+        <h2 data-i18n="services-title" class="text-3xl sm:text-4xl font-extrabold mb-5 leading-tight">نصحبك أينما كنت برفاهية كاملة</h2>
+        <p data-i18n="services-subtitle" class="text-gray-400 text-sm sm:text-base leading-relaxed">
+          اختر من بين باقة خدماتنا المصممة لتلائم كافة احتياجاتك وتضمن لك رحلة آمنة ومريحة.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1: Airport -->
+        <div class="reveal glass-panel p-8 rounded-2xl relative flex flex-col justify-between overflow-hidden">
+          <div class="absolute -top-3 -left-3 bg-gradient-to-br from-gold to-gold-dark text-black text-[10px] font-black uppercase tracking-wider px-5 py-2 rotate-[-10deg] shadow-lg border border-gold-light/20 z-10">
+            <span data-i18n="service-airport-offer">عرض خاص لمشوار المطار</span>
+          </div>
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6 text-gold border border-gold/20">
+              <i class="fa-solid fa-plane-departure text-2xl"></i>
+            </div>
+            <h3 data-i18n="service-airport-title" class="text-xl font-bold mb-4">توصيلات المطارات</h3>
+            <p data-i18n="service-airport-desc" class="text-gray-400 text-sm leading-relaxed mb-6">
+              خدمة نقل مخصصة من وإلى كافة المطارات المصرية. نتابع مواعيد رحلتك لضمان استقبالك في الوقت المحدد ومساعدتك في الأمتعة.
+            </p>
+          </div>
+          <div class="border-t border-[#2A2A2A] pt-4 mt-4">
+            <p data-i18n="service-airport-details" class="text-xs text-gold font-semibold leading-relaxed">
+              تشمل: مطار القاهرة، مطار الإسكندرية، مطار سفنكس، وكافة المطارات الأخرى.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service Card 2: VIP / Business -->
+        <div class="reveal glass-panel p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6 text-gold border border-gold/20">
+              <i class="fa-solid fa-briefcase text-2xl"></i>
+            </div>
+            <h3 data-i18n="service-vip-title" class="text-xl font-bold mb-4">VIP وخدمات رجال الأعمال</h3>
+            <p data-i18n="service-vip-desc" class="text-gray-400 text-sm leading-relaxed mb-6">
+              تنقلات راقية تليق برجال الأعمال وكبار الشخصيات. نوفر سيارات فاخرة وسائقين يتميزون باللباقة والسرية التامة لإتمام أعمالك اليومية بسلاسة.
+            </p>
+          </div>
+          <div class="border-t border-[#2A2A2A] pt-4 mt-4">
+            <p data-i18n="service-vip-details" class="text-xs text-gold font-semibold leading-relaxed">
+              سيارات مرسيدس وسيارات دفع رباعي حديثة تضمن لك الأناقة والوقار.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service Card 3: Intercity -->
+        <div class="reveal glass-panel p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6 text-gold border border-gold/20">
+              <i class="fa-solid fa-map-location-dot text-2xl"></i>
+            </div>
+            <h3 data-i18n="service-cities-title" class="text-xl font-bold mb-4">توصيل بين المحافظات</h3>
+            <p data-i18n="service-cities-desc" class="text-gray-400 text-sm leading-relaxed mb-6">
+              سافر بين المدن المصرية براحة تامة ودون عناء. نربط العاصمة بكافة الشواطئ والمحافظات بسرعة وأمان مع سائق خاص.
+            </p>
+          </div>
+          <div class="border-t border-[#2A2A2A] pt-4 mt-4">
+            <p data-i18n="service-cities-details" class="text-xs text-gold font-semibold leading-relaxed font-sans">
+              القاهرة، الإسكندرية، الساحل الشمالي، شرم الشيخ، السخنة، الغردقة، مرسى مطروح، ورأس سدر.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. Fleet Section -->
+  <section id="fleet" class="py-24 bg-[#0B0B0B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="reveal text-center max-w-3xl mx-auto mb-16">
+        <span data-i18n="fleet-badge" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold block mb-3">أسطولنا الفاخر</span>
+        <h2 data-i18n="fleet-title" class="text-3xl sm:text-4xl font-extrabold mb-5 leading-tight">سيارات حديثة مكيفة تناسب كافة الاحتياجات</h2>
+        <p data-i18n="fleet-subtitle" class="text-gray-400 text-sm sm:text-base leading-relaxed">
+          نمتلك أحدث طرازات السيارات الفاخرة التي توفر لك ولعائلتك المساحة الكافية للركاب والحقائب.
+        </p>
+        
+        <!-- Highlight badges -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+          <span data-i18n="badge-price" class="bg-[#121212] border border-gold/20 text-gold text-xs font-semibold px-3 py-1.5 rounded-full">أقل سعر في مصر</span>
+          <span data-i18n="badge-quality" class="bg-[#121212] border border-gold/20 text-gold text-xs font-semibold px-3 py-1.5 rounded-full">أعلى جودة VIP</span>
+          <span data-i18n="badge-drivers" class="bg-[#121212] border border-gold/20 text-gold text-xs font-semibold px-3 py-1.5 rounded-full">سائقين محترفين</span>
+        </div>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Toyota Corolla Card -->
+        <div class="reveal glass-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/fleet_corolla.jpg" alt="Toyota Corolla" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-4 right-4 flex items-center gap-2 bg-black/60 px-3 py-1 rounded-full text-xs text-gold">
+              <i class="fa-solid fa-users"></i>
+              <span data-i18n="fleet-corolla-cap">٤ ركاب | ٣ حقائب</span>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 data-i18n="fleet-corolla-title" class="text-xl font-bold mb-3 text-white">تويوتا كورولا</h3>
+              <p data-i18n="fleet-corolla-desc" class="text-gray-400 text-sm leading-relaxed mb-6">
+                السيارة الأكثر اعتمادية وراحة للرحلات وتوصيلات المطارات، تتميز بأداء سلس وتكييف ممتاز.
+              </p>
+            </div>
+            <a href="#booking" class="w-full py-3 rounded-full text-center text-sm font-bold gold-outline-btn block uppercase">
+              احجز الآن
+            </a>
+          </div>
+        </div>
+
+        <!-- Hyundai CN7 Card -->
+        <div class="reveal glass-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/fleet_cn7.jpg" alt="Hyundai CN7" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-4 right-4 flex items-center gap-2 bg-black/60 px-3 py-1 rounded-full text-xs text-gold">
+              <i class="fa-solid fa-users"></i>
+              <span data-i18n="fleet-cn7-cap">٤ ركاب | ٣ حقائب</span>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 data-i18n="fleet-cn7-title" class="text-xl font-bold mb-3 text-white">هيونداي CN7</h3>
+              <p data-i18n="fleet-cn7-desc" class="text-gray-400 text-sm leading-relaxed mb-6">
+                سيدان بتصميم رياضي عصري جذاب يمنحك التميز، مجهزة بأحدث وسائل الأمان والرفاهية لرحلة ممتعة.
+              </p>
+            </div>
+            <a href="#booking" class="w-full py-3 rounded-full text-center text-sm font-bold gold-outline-btn block uppercase">
+              احجز الآن
+            </a>
+          </div>
+        </div>
+
+        <!-- Mitsubishi Xpander Card -->
+        <div class="reveal glass-panel rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-52 overflow-hidden">
+            <img src="assets/images/fleet_xpander.jpg" alt="Mitsubishi Xpander" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-4 right-4 flex items-center gap-2 bg-black/60 px-3 py-1 rounded-full text-xs text-gold">
+              <i class="fa-solid fa-users"></i>
+              <span data-i18n="fleet-xpander-cap">٧ ركاب | ٤ حقائب</span>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 data-i18n="fleet-xpander-title" class="text-xl font-bold mb-3 text-white">ميتسوبيشي إكسباندر</h3>
+              <p data-i18n="fleet-xpander-desc" class="text-gray-400 text-sm leading-relaxed mb-6">
+                سيارة عائلية (MPV) تتسع لـ 7 ركاب، مثالية للمجموعات الكبيرة التي تبحث عن مساحة حقائب كافية وراحة عالية.
+              </p>
+            </div>
+            <a href="#booking" class="w-full py-3 rounded-full text-center text-sm font-bold gold-outline-btn block uppercase">
+              احجز الآن
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Destinations Grid Section -->
+  <section id="destinations" class="py-24 bg-[#121212]/30 border-y border-[#1E1E1E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="reveal text-center max-w-3xl mx-auto mb-16">
+        <span data-i18n="dest-badge" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold block mb-3">الوجهات الأكثر طلباً</span>
+        <h2 data-i18n="dest-title" class="text-3xl sm:text-4xl font-extrabold mb-5 leading-tight">تغطية شاملة لكافة المدن والمصايف المصرية</h2>
+      </div>
+
+      <!-- Visual Locations Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1572252017456-e26b15805561?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-cairo" class="font-bold text-lg text-white">القاهرة</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1568322422994-50d59396b146?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-alex" class="font-bold text-lg text-white font-sans">الإسكندرية</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-sahel" class="font-bold text-lg text-white">الساحل الشمالي</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-sokhna" class="font-bold text-lg text-white font-sans">العين السخنة</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1510414838738-d326e037f49f?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-sharm" class="font-bold text-lg text-white font-sans">شرم الشيخ</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-hurghada" class="font-bold text-lg text-white">الغردقة</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-matrouh" class="font-bold text-lg text-white">مرسى مطروح</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+        <div class="reveal relative h-48 rounded-2xl overflow-hidden group shadow-lg">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&q=80&w=600');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 inset-x-4 flex justify-between items-center">
+            <span data-i18n="dest-sudr" class="font-bold text-lg text-white font-sans">رأس سدر</span>
+            <i class="fa-solid fa-arrow-left-long text-gold -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all rtl:group-hover:translate-x-0 ltr:group-hover:rotate-180"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. Quick Booking Booking Engine -->
+  <section id="booking" class="py-24 bg-[#0B0B0B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="reveal text-center max-w-3xl mx-auto mb-16">
+        <span data-i18n="booking-badge" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-gold block mb-3">احجز رحلتك الآن</span>
+        <h2 data-i18n="booking-title" class="text-3xl sm:text-4xl font-extrabold mb-5 leading-tight">احسب تكلفة رحلتك التقديرية واحجز فوراً</h2>
+        <p data-i18n="booking-subtitle" class="text-gray-400 text-sm sm:text-base leading-relaxed">
+          املأ بيانات رحلتك بالأسفل للحصول على سعر تقديري فوري، ثم أرسل الطلب مباشرة إلى خدمة العملاء عبر الواتساب لتأكيد الحجز.
+        </p>
+      </div>
+
+      <!-- Booking Grid Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Form Pane (Left) -->
+        <div class="reveal lg:col-span-8 glass-panel p-8 rounded-3xl border border-gold/15">
+          <form id="booking-form" class="space-y-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Pickup Location -->
+              <div>
+                <label for="pickup" data-i18n="lbl-pickup" class="block text-sm font-bold text-gray-300 mb-2">مكان الانطلاق (نقطة البداية)</label>
+                <select id="pickup" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold">
+                  <option value="" disabled selected data-i18n="opt-select">اختر من القائمة...</option>
+                  <option value="cairo" data-i18n="opt-cairo">القاهرة / مطار القاهرة</option>
+                  <option value="alex" data-i18n="opt-alex">الإسكندرية / مطار برج العرب</option>
+                  <option value="sphinx" data-i18n="opt-sphinx">مطار سفنكس</option>
+                  <option value="sahel" data-i18n="opt-sahel">الساحل الشمالي / العلمين</option>
+                  <option value="sharm" data-i18n="opt-sharm">شرم الشيخ</option>
+                  <option value="sokhna" data-i18n="opt-sokhna">العين السخنة</option>
+                  <option value="hurghada" data-i18n="opt-hurghada">الغردقة</option>
+                  <option value="matrouh" data-i18n="opt-matrouh">مرسى مطروح</option>
+                  <option value="sudr" data-i18n="opt-sudr">رأس سدر</option>
+                  <option value="other" data-i18n="opt-other">مكان آخر (أكتبه بالأسفل)</option>
+                </select>
+              </div>
+
+              <!-- Dropoff Location -->
+              <div>
+                <label for="dropoff" data-i18n="lbl-dropoff" class="block text-sm font-bold text-gray-300 mb-2">وجهة الوصول (نقطة النهاية)</label>
+                <select id="dropoff" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold">
+                  <option value="" disabled selected data-i18n="opt-select">اختر من القائمة...</option>
+                  <option value="cairo" data-i18n="opt-cairo">القاهرة / مطار القاهرة</option>
+                  <option value="alex" data-i18n="opt-alex">الإسكندرية / مطار برج العرب</option>
+                  <option value="sphinx" data-i18n="opt-sphinx">مطار سفنكس</option>
+                  <option value="sahel" data-i18n="opt-sahel">الساحل الشمالي / العلمين</option>
+                  <option value="sharm" data-i18n="opt-sharm">شرم الشيخ</option>
+                  <option value="sokhna" data-i18n="opt-sokhna">العين السخنة</option>
+                  <option value="hurghada" data-i18n="opt-hurghada">الغردقة</option>
+                  <option value="matrouh" data-i18n="opt-matrouh">مرسى مطروح</option>
+                  <option value="sudr" data-i18n="opt-sudr">رأس سدر</option>
+                  <option value="other" data-i18n="opt-other">مكان آخر (أكتبه بالأسفل)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Optional Custom Locations -->
+            <div id="pickup-other-container" class="hidden">
+              <label for="pickup-other" data-i18n="lbl-pickup-other" class="block text-sm font-bold text-gray-300 mb-2">أكتب مكان الانطلاق بالتفصيل (إذا اخترت مكان آخر)</label>
+              <input type="text" id="pickup-other" data-i18n-placeholder="lbl-pickup-other" placeholder="مثال: المهندسين، شارع جامعة الدول العربية" class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none">
+            </div>
+
+            <div id="dropoff-other-container" class="hidden">
+              <label for="dropoff-other" data-i18n="lbl-dropoff-other" class="block text-sm font-bold text-gray-300 mb-2">أكتب وجهة الوصول بالتفصيل (إذا اخترت مكان آخر)</label>
+              <input type="text" id="dropoff-other" data-i18n-placeholder="lbl-dropoff-other" placeholder="مثال: فندق هيلتون، الإسكندرية" class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none">
+            </div>
+
+            <!-- Date and Time -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="date" data-i18n="lbl-date" class="block text-sm font-bold text-gray-300 mb-2">تاريخ الرحلة</label>
+                <input type="date" id="date" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none text-right font-sans">
+              </div>
+
+              <div>
+                <label for="time" data-i18n="lbl-time" class="block text-sm font-bold text-gray-300 mb-2">وقت التحرك</label>
+                <input type="time" id="time" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none text-right font-sans">
+              </div>
+            </div>
+
+            <!-- Car Type, Passengers, Luggage -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <label for="car-type" data-i18n="lbl-car-type" class="block text-sm font-bold text-gray-300 mb-2">فئة السيارة المطلوبة</label>
+                <select id="car-type" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold">
+                  <option value="corolla" data-i18n="opt-car-corolla" selected>تويوتا كورولا (Toyota Corolla)</option>
+                  <option value="cn7" data-i18n="opt-car-cn7">هيونداي CN7 (Hyundai Elantra)</option>
+                  <option value="xpander" data-i18n="opt-car-xpander">ميتسوبيشي إكسباندر (Mitsubishi Xpander)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="passengers" data-i18n="lbl-passengers" class="block text-sm font-bold text-gray-300 mb-2">عدد الركاب</label>
+                <input type="number" id="passengers" min="1" max="15" value="1" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none font-sans">
+              </div>
+
+              <div>
+                <label for="luggage" data-i18n="lbl-luggage" class="block text-sm font-bold text-gray-300 mb-2">عدد الحقائب</label>
+                <input type="number" id="luggage" min="0" max="15" value="0" required class="w-full bg-[#141414] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white focus:outline-none font-sans">
+              </div>
+            </div>
+
+            <button type="submit" class="w-full py-4.5 rounded-2xl text-black font-black text-lg shadow-xl gold-btn flex items-center justify-center gap-3">
+              <i class="fab fa-whatsapp text-2xl"></i>
+              <span data-i18n="btn-submit-wa">تأكيد الحجز عبر الواتساب</span>
+            </button>
+            
+          </form>
+        </div>
+
+        <!-- Quote Info Pane (Right) -->
+        <div class="reveal lg:col-span-4 bg-gradient-to-br from-[#121212] to-[#161616] p-8 rounded-3xl border border-gold/15 text-center flex flex-col justify-between min-h-[480px]">
+          
+          <div class="space-y-6">
+            <span class="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center mx-auto border border-gold/25">
+              <i class="fa-solid fa-calculator text-lg"></i>
+            </span>
+            <h3 data-i18n="calc-title" class="text-xl font-bold text-white uppercase tracking-wider">التكلفة التقديرية للرحلة</h3>
+            <div class="w-full h-px bg-gradient-to-r from-transparent via-[#2A2A2A] to-transparent"></div>
+          </div>
+
+          <div class="my-8 py-6 px-4 bg-black/40 rounded-2xl border border-[#222222]">
+            <p id="estimated-price-display" class="text-gray-400 font-bold transition-all duration-300 text-lg">أدخل تفاصيل الرحلة للحساب</p>
+            <!-- Hidden input to store raw price -->
+            <input type="hidden" id="estimated-price-raw" value="">
+          </div>
+
+          <div class="space-y-4">
+            <p data-i18n="calc-disclaimer" class="text-xs text-gray-500 leading-relaxed text-right rtl:text-right ltr:text-left">
+              * هذا السعر تقديري ويشمل السيارة والسائق والوقود ورسوم البوابات الأساسية. قد يختلف السعر النهائي بناءً على نقاط التوقف الإضافية أو فترات الانتظار الطويلة.
+            </p>
+            <div class="flex items-center justify-center gap-6 pt-4 border-t border-[#2A2A2A]">
+              <i class="fa-solid fa-shield-halved text-gold text-lg"></i>
+              <span class="text-xs text-gray-400">رحلات آمنة ومرخصة بنسبة 100%</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. Contact Us & Info Section -->
+  <section id="contact" class="py-24 bg-[#121212]/30 border-t border-[#1E1E1E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Contact Card 1 -->
+        <a href="tel:01271170882" class="reveal glass-panel p-8 rounded-2xl text-center block group">
+          <div class="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center mx-auto mb-4 border border-gold/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <p class="text-xs text-gray-400 mb-1">اتصل بالرقم الرئيسي</p>
+          <p class="text-xl font-bold font-sans text-white group-hover:text-gold transition-colors">01271170882</p>
+        </a>
+
+        <!-- Contact Card 2 -->
+        <a href="tel:01556861186" class="reveal glass-panel p-8 rounded-2xl text-center block group">
+          <div class="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center mx-auto mb-4 border border-gold/20 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <p class="text-xs text-gray-400 mb-1">اتصل بالرقم البديل</p>
+          <p class="text-xl font-bold font-sans text-white group-hover:text-gold transition-colors">01556861186</p>
+        </a>
+
+        <!-- Contact Card 3 -->
+        <a href="https://instagram.com/hmdfwzy9760" target="_blank" rel="noopener noreferrer" class="reveal glass-panel p-8 rounded-2xl text-center block group">
+          <div class="w-12 h-12 rounded-full bg-gold/10 text-gold flex items-center justify-center mx-auto mb-4 border border-gold/20 group-hover:scale-110 transition-transform">
+            <i class="fab fa-instagram text-lg"></i>
+          </div>
+          <p class="text-xs text-gray-400 mb-1">تابعنا على إنستغرام</p>
+          <p class="text-xl font-bold font-sans text-white group-hover:text-gold transition-colors">@hmdfwzy9760</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Footer -->
+  <footer class="bg-[#0B0B0B] border-t border-[#121212] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Logo and About -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.png" alt="Al Yassin Limousine Logo" class="h-10 w-10 object-contain rounded-lg border border-gold/20 shadow-lg gold-logo-glow">
+            <span class="text-xl font-black bg-gradient-to-r from-gold-light to-gold bg-clip-text text-transparent">آل ياسين ليموزين</span>
+          </div>
+          <p data-i18n="footer-about" class="text-gray-400 text-sm leading-relaxed max-w-sm">
+            آل ياسين ليموزين - الاسم الأول في عالم الليموزين والنقل السياحي الفاخر في مصر. نسعى دائماً لتقديم أفضل تجربة لعملائنا.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 data-i18n="footer-links-title" class="text-gold font-bold mb-4 uppercase tracking-wider text-sm">روابط سريعة</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" data-i18n="nav-home" class="text-gray-400 hover:text-white text-sm transition-colors">الرئيسية</a></li>
+            <li><a href="#about" data-i18n="nav-about" class="text-gray-400 hover:text-white text-sm transition-colors">من نحن</a></li>
+            <li><a href="#services" data-i18n="nav-services" class="text-gray-400 hover:text-white text-sm transition-colors">خدماتنا</a></li>
+            <li><a href="#fleet" data-i18n="nav-fleet" class="text-gray-400 hover:text-white text-sm transition-colors">أسطولنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 data-i18n="footer-contact-title" class="text-gold font-bold mb-4 uppercase tracking-wider text-sm">معلومات الاتصال</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-sm text-gray-400">
+              <i class="fa-solid fa-phone text-gold"></i>
+              <span>01271170882</span>
+            </li>
+            <li class="flex items-center gap-3 text-sm text-gray-400">
+              <i class="fa-solid fa-phone text-gold"></i>
+              <span>01556861186</span>
+            </li>
+            <li class="flex items-center gap-3 text-sm text-gray-400">
+              <i class="fa-solid fa-clock text-gold"></i>
+              <span data-i18n="footer-working-hours">ساعات العمل: ٢٤ ساعة طوال أيام الأسبوع</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Area -->
+      <div class="border-t border-[#1E1E1E] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p data-i18n="footer-copyright" class="text-xs text-gray-500">© 2026 آل ياسين لخدمات الليموزين. جميع الحقوق محفوظة.</p>
+        <div class="flex items-center gap-4 text-gray-500 hover:text-gray-400">
+          <i class="fa-solid fa-gem text-gold"></i>
+          <span class="text-xs">تصميم فاخر من فئة VIP</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- App Javascript -->
+  <script src="js/app.js"></script>
+</body>
+</html>

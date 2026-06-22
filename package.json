@@ -1,0 +1,14 @@
+{
+  "name": "al-yassin-limousine",
+  "version": "1.0.0",
+  "description": "Premium Landing Page for Al Yassin Limousine",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

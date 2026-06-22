@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-light: #F3E5AB;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #AA7C11;
+  --color-gold-deep: #8A640F;
+  --color-luxury-bg: #0B0B0B;
+  --color-luxury-card: #141414;
+  --color-luxury-card-hover: #1E1E1E;
+  --color-luxury-border: #2A2A2A;
+  --color-luxury-text-muted: #A0A0A0;
+  
+  --font-arabic: 'Cairo', 'Tajawal', sans-serif;
+  --font-english: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom CSS Styles */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+  font-family: 'Cairo', 'Tajawal', sans-serif; /* default is Arabic */
+  overflow-x: hidden;
+}
+
+/* LTR layout styling overrides */
+html[dir="ltr"] body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Glassmorphism Card Style */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 12px 40px 0 rgba(212, 175, 55, 0.15);
+  transform: translateY(-6px);
+}
+
+/* Glassmorphism Navigation Bar */
+.glass-nav {
+  background: rgba(11, 11, 11, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.03);
+  transition: all 0.3s ease;
+}
+
+.glass-nav.scrolled {
+  background: rgba(11, 11, 11, 0.92);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Luxury Gold Button Styling */
+.gold-btn {
+  background: linear-gradient(135deg, #AA7C11 0%, #D4AF37 50%, #F3E5AB 100%);
+  color: #000000;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-btn:hover {
+  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.45);
+  transform: scale(1.03);
+}
+
+/* Gold Outline Button Styling */
+.gold-outline-btn {
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  transition: all 0.3s ease;
+}
+
+.gold-outline-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #FFFFFF;
+  border-color: #F3E5AB;
+}
+
+/* Floating WhatsApp Button Pulse */
+.wa-float-btn {
+  animation: pulseWa 2s infinite;
+}
+
+@keyframes pulseWa {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Custom Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide elements when swapping languages */
+.lang-ar {
+  display: block;
+}
+.lang-en {
+  display: none;
+}
+
+html[dir="ltr"] .lang-ar {
+  display: none;
+}
+
+html[dir="ltr"] .lang-en {
+  display: block;
+}
+
+/* Input Styles */
+input, select, textarea {
+  transition: all 0.3s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #D4AF37 !important;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2) !important;
+}
+
+/* Premium Text Shadows and Highlights */
+.gold-text-glow {
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.gold-logo-glow {
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.45));
+}
+
+/* Custom Hide Scrollbar for Slider */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
